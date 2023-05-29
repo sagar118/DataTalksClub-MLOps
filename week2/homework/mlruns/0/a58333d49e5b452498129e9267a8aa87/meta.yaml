@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wizard/Astronaut/Dev/MLOps/week2/homework/mlruns/0/a58333d49e5b452498129e9267a8aa87/artifacts
+end_time: 1684948819769
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a58333d49e5b452498129e9267a8aa87
+run_name: enthused-mule-531
+run_uuid: a58333d49e5b452498129e9267a8aa87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1684948806336
+status: 3
+tags: []
+user_id: wizard
