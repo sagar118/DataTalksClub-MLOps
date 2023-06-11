@@ -117,6 +117,7 @@ def primary_flow(
     """The main training pipeline"""
 
     # MLflow settings
+    mlflow.set_tracking_uri("http://127.0.0.1:8080")
     mlflow.set_tracking_uri("sqlite:///mlflow.db")
     mlflow.set_experiment("nyc-taxi-experiment")
 
