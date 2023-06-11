@@ -1,4 +1,6 @@
 blog/
+artifacts/
+wandb/
 
 .DS_Store
 
