@@ -109,8 +109,8 @@ def train_best_model(
     return None
 
 
-@flow
-def main_flow(
+@flow(name="main-flow")
+def primary_flow(
     train_path: str,
     val_path: str,
 ) -> None:
@@ -132,4 +132,4 @@ def main_flow(
 
 
 if __name__ == "__main__":
-    main_flow()
+    primary_flow()

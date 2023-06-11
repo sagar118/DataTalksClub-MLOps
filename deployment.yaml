@@ -3,9 +3,8 @@ deployments:
   schedule: {
     cron: "0 9 3 * *"
   }
-  entrypoint: week3/orchestrate.py:main_flow
+  entrypoint: week3/orchestration.py:primary_flow
   work_pool:
     name: hw
     work_queue_name: test
-    type: process
     job_variables: {}
