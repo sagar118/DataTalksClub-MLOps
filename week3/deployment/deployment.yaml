@@ -1,0 +1,11 @@
+deployments:
+- name: hw-q3
+  schedule: {
+    cron: "0 9 3 * *"
+  }
+  entrypoint: orchestrate.py:main_flow
+  work_pool:
+    name: hw
+    work_queue_name: test
+    type: process
+    job_variables: {}
