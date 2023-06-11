@@ -3,7 +3,7 @@ deployments:
   schedule: {
     cron: "0 9 3 * *"
   }
-  entrypoint: orchestrate.py:main_flow
+  entrypoint: ./week3/deployment/orchestrate.py:main_flow
   work_pool:
     name: hw
     work_queue_name: test
