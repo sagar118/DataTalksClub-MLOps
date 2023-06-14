@@ -139,7 +139,8 @@ def primary_flow(
     """The main training pipeline"""
 
     # MLflow settings
-    mlflow.set_tracking_uri("sqlite:///mlflow.db")
+    # mlflow.set_tracking_uri("sqlite:///mlflow.db")
+    mlflow.set_tracking_uri("http://127.0.0.1:8080")
     mlflow.set_experiment("nyc-taxi-experiment")
 
     # Load
@@ -153,13 +154,13 @@ def primary_flow(
     train_best_model(X_train, X_val, y_train, y_val, dv)
 
     # Send email
-    email_credentials_block = EmailServerCredentials.load("work-gmail")
-    subject = email_send_message.with_options(name=f"email Sagar Thacker").submit(
-            email_server_credentials=email_credentials_block,
-            subject="Example Flow Notification using Gmail",
-            msg="This proves email_send_message works!",
-            email_to="sagarthacker961118@gmail.com",
-        )
+    # email_credentials_block = EmailServerCredentials.load("work-gmail")
+    # subject = email_send_message.with_options(name=f"email Sagar Thacker").submit(
+    #         email_server_credentials=email_credentials_block,
+    #         subject="Example Flow Notification using Gmail",
+    #         msg="This proves email_send_message works!",
+    #         email_to="sagarthacker961118@gmail.com",
+    #     )
 
 
 if __name__ == "__main__":
